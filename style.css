@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #300000;
+    background: linear-gradient(180deg, #080808 0%, #282828 35%, #404040 100%);
+    height: 80px;
+    color: white;
+    padding: 0 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+
+
+header .logo {
+    font-size: 2rem;
+    min-width: 254px;
+    color: goldenrod;
+}
+
+
+
+header nav {
+    font-size: 1.2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav li {
+    margin: 0 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover {
+    color: gold;
+}
+
+main {
+    margin-top: 80px;
+}
+
+main .banner {
+    background-color: #282828;
+    background-image: url("banner.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    height: 700px;
+    display: flex;
+    align-items: center;  
+}
+
+main .banner h1 {
+    font-size: 4rem;
+    opacity: 0.6;
+}
+
+main .banner h2 {
+    font-size: 2.6rem;
+    opacity: 0.6;
+}
+
+main .banner-title  {
+    background-color: rgba(0,0,0,0.6);
+    width: 50%;
+    padding: 20px 20px;
+    margin-left: 20px;
+}
+
+main .banner .cta-button {
+    width: 160px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+main .banner-title .cta-button:hover {
+    background-color: mediumaquamarine;
+    margin-top: 22px;
+    margin-left: 2px;
+}
+
+main .banner-title .cta-button:hover ~ .banner-title {
+    background-color: pink;
+}
+
+
+@media screen and (max-width:780px) {
+    header {
+        height: 150px;
+    }
+
+    header .logo {
+        font-size: 1.8rem;
+        min-width: 190px;
+    }
+
+    header nav {
+        font-size: 1rem;
+    }
+
+    main {
+        margin-top: 150px;
+    }
+
+    main .banner-title {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    main .banner-title {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+}
+
