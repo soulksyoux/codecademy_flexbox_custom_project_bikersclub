@@ -159,8 +159,18 @@ main .activities .items .titles {
     margin-top: 10px; 
 }
 
-.location {
 
+.contacts {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+.contacts-title h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.location {
     color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
