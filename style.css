@@ -259,4 +259,21 @@ footer {
     .location .address {
         padding: 60px 0;
     }
+
+    main .activities {
+
+        margin: 0;
+
+    
+    }
+}
+
+@media screen and (max-width:1142px) {
+
+    main .activities {
+
+        margin: 0 4%;
+
+    
+    }
 }
